@@ -1,0 +1,9 @@
+title = "Artist"
+url = "/artist/:artist"
+is_hidden = 0
+
+[artist]
+==
+<h1>{{ artist.name }}</h1>
+
+<a href="/artist/{{ artist.slug }}/albums">All albums by {{ artist.name }}</a>

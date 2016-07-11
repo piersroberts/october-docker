@@ -1,0 +1,4 @@
+title: Albums
+list: ~/plugins/buzzwordcompliant/musiclists/models/album/columns.yaml
+modelClass: BuzzwordCompliant\Musiclists\Models\Album
+recordUrl: buzzwordcompliant/musiclists/album/update/:id
