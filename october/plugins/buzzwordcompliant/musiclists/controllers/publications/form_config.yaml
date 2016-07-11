@@ -1,0 +1,9 @@
+name: Publication
+form: $/buzzwordcompliant/musiclists/models/publication/fields.yaml
+modelClass: BuzzwordCompliant\Musiclists\Models\Publication
+
+create:
+    title: New publication
+    redirect: buzzwordcompliant/musiclists/publications
+    redirectClose: buzzwordcompliant/musiclists/publications
+    flashSave: Publication created

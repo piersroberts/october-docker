@@ -56,7 +56,7 @@ class Plugin extends \System\Classes\PluginBase
                     'publications' => [
                         'label'       => 'Publications',
                         'icon'        => 'icon-newspaper-o',
-                        'url'         => Backend::url('buzzwordcompliant/musiclists/publicaations'),
+                        'url'         => Backend::url('buzzwordcompliant/musiclists/publications'),
                         'permissions' => ['buzzwordcompliant.musiclists.publications']
                     ]
                 ]

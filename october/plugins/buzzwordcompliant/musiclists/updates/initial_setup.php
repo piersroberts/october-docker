@@ -7,7 +7,7 @@ class InitialSetup extends Migration
 {
     public function up()
     {
-        Schema::create('musiclists.artists', function($table)
+        Schema::create('ml_artists', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
@@ -16,21 +16,21 @@ class InitialSetup extends Migration
             $table->timestamps();
         });
 
-        Schema::create('musiclists.albums', function($table)
+        Schema::create('ml_albums', function($table)
         {
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name');
             $table->string('slug')->index();
             $table->integer('artist_id')->unsigned();
-            $table->foreign('artist_id')->references('id')->on('artists');
+            $table->foreign('artist_id')->references('id')->on('ml_artists');
             $table->timestamps();
         });
     }
 
     public function down()
     {
-        Schema::drop('musiclists.artists');
-        Schema::drop('musiclists.albums');
+        Schema::drop('ml_artists');
+        Schema::drop('ml_albums');
     }
 }

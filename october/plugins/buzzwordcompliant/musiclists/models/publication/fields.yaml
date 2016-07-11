@@ -1,0 +1,4 @@
+fields:
+    name:
+        label: Publication name
+        description: The common display name for this publication
