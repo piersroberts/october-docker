@@ -22,11 +22,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Plugin.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Plugin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/Plugin.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="647">
               <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Artist.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/components/Artist.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+              <folding>
+                <element signature="e#58#120#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/october/themes/musiclists/pages/home.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="artist-albums.htm" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/october/themes/musiclists/pages/artist-albums.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -52,31 +84,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="list_config.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/controllers/artists/list_config.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="columns.yaml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/models/artist/columns.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="list_config.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/controllers/albums/list_config.yaml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -112,16 +124,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Lists.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/controllers/Lists.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="21" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="IdeDocumentHistory">
@@ -144,7 +146,6 @@
         <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/models/Album.php" />
         <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/models/Artist.php" />
         <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/components/Album.php" />
-        <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/components/Artist.php" />
         <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/controllers/lists/index.htm" />
         <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/controllers/Lists.php" />
         <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/controllers/artists/list_config.yaml" />
@@ -156,6 +157,8 @@
         <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/controllers/albums/index.htm" />
         <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/models/album/columns.yaml" />
         <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/Plugin.php" />
+        <option value="$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/components/Artist.php" />
+        <option value="$PROJECT_DIR$/october/themes/musiclists/pages/artist-albums.htm" />
       </list>
     </option>
   </component>
@@ -167,8 +170,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="33" />
-    <option name="y" value="23" />
+    <option name="x" value="265" />
+    <option name="y" value="181" />
     <option name="width" value="1665" />
     <option name="height" value="1027" />
   </component>
@@ -746,15 +749,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1468164101956</updated>
-      <workItem from="1468164103544" duration="16224000" />
+      <workItem from="1468164103544" duration="19124000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16224000" />
+    <option name="totallyTimeSpent" value="19124000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="23" width="1665" height="1027" extended-state="0" />
+    <frame x="265" y="181" width="1665" height="1027" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25323474" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1020,14 +1023,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/components/Artist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/controllers/lists/index.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1116,10 +1111,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/october/themes/musiclists/pages/home.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/Plugin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
           <caret line="59" column="84" selection-start-line="59" selection-start-column="84" selection-end-line="59" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/october/plugins/buzzwordcompliant/musiclists/components/Artist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="8" selection-start-line="34" selection-start-column="8" selection-end-line="34" selection-end-column="8" />
+          <folding>
+            <element signature="e#58#120#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/october/themes/musiclists/pages/artist-albums.htm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
           <folding />
         </state>
       </provider>

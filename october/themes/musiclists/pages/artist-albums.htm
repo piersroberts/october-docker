@@ -3,5 +3,12 @@ url = "/artist/:artist/albums"
 is_hidden = 0
 
 [artist]
+includeAlbums = 1
 ==
 <h1>All albums by {{ artist.name }}</h1>
+
+<ul>
+    {% for album in artist.albums %}
+    <a href="/album/{{ artist.slug }}/{{ album.slug }}">{{ album.name }}</a>
+    {% endfor %}
+</ul>
