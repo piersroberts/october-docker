@@ -5,8 +5,14 @@ use Backend\Facades\BackendMenu;
 
 class Lists extends \Backend\Classes\Controller
 {
-    public $implement = ['Backend.Behaviors.ListController'];
+    public $implement = [
+        'Backend.Behaviors.ListController',
+        'Backend.Behaviors.FormController',
+        'Backend.Behaviors.RelationController'
+    ];
     public $listConfig = 'list_config.yaml';
+    public $formConfig = 'form_config.yaml';
+    public $relationConfig = 'relation_config.yaml';
 
     public function __construct()
     {

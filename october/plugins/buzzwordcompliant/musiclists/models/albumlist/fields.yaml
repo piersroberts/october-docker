@@ -1,0 +1,11 @@
+fields:
+  name:
+    label: List name
+    description: The common display name for this list
+  publication:
+    label: Publication
+    type: relation
+    nameFrom: name
+  albums:
+    label: Albums
+    type: partial

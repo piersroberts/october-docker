@@ -2,6 +2,7 @@
 namespace BuzzwordCompliant\Musiclists\Models;
 
 use Model;
+use Str;
 
 class AlbumList extends Model
 {
@@ -10,7 +11,18 @@ class AlbumList extends Model
     public $belongsTo = [
         'publication' => 'BuzzwordCompliant\Musiclists\Models\Publication'
     ];
-    public $hasMany = [
-        'albumListItems' => 'BuzzwordCompliant\Musiclists\Models\AlbumListItem'
+
+    public $belongsToMany = [
+        'albums' => [
+            'BuzzwordCompliant\Musiclists\Models\Album',
+            'table' => 'ml_album_list_items',
+            'pivot' => ['position'],
+            'pivotModel' => 'BuzzwordCompliant\Musiclists\Models\AlbumListItem',
+        ]
     ];
+
+    public function beforeCreate()
+    {
+        $this->slug = Str::slug($this->name);
+    }
 }

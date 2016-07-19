@@ -19,7 +19,8 @@ class Plugin extends \System\Classes\PluginBase
             'BuzzwordCompliant\Musiclists\Components\Album' => 'album',
             'BuzzwordCompliant\Musiclists\Components\Artist' => 'artist',
             'BuzzwordCompliant\Musiclists\Components\Publication' => 'publication',
-            'BuzzwordCompliant\Musiclists\Components\AlbumList' => 'albumList'
+            'BuzzwordCompliant\Musiclists\Components\AlbumList' => 'albumList',
+            'BuzzwordCompliant\Musiclists\Components\AlbumLists' => 'albumLists'
         ];
     }
 

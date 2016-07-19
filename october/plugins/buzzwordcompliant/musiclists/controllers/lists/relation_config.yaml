@@ -1,0 +1,21 @@
+albums:
+    label: Album
+    view:
+        list:
+          columns:
+            pivot[position]:
+              label: Position
+            artist:
+              label: Artist
+              relation: artist
+              select: name
+            name: Name
+
+        showSearch: true
+    manage:
+      list: ~/plugins/buzzwordcompliant/musiclists/models/album/columns.yaml
+    pivot:
+      form:
+        fields:
+          pivot[position]:
+            label: Position

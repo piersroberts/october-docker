@@ -1,0 +1,6 @@
+fields:
+  name:
+    label: Album name
+  artist:
+    label: Artist
+    type: relation

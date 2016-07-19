@@ -1,17 +1,7 @@
 <?php
 namespace BuzzwordCompliant\Musiclists\Models;
-
-use Model;
-
-class AlbumListItem extends Model
-{
-    protected $table = 'ml_album_list_items';
-
-    public $hasOne = [
-        'album' => 'BuzzwordCompliant\Musiclists\Models\Album',
-    ];
-
-    public $belongsTo = [
-        'albumList' => 'BuzzwordCompliant\Musiclists\Models\AlbumList'
-    ];
-}
+use October\Rain\Database\Pivot;
+/**
+ * User-Role Pivot Model
+ */
+class AlbumListItem extends Pivot{}
