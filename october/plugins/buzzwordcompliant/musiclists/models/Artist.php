@@ -2,15 +2,10 @@
 namespace BuzzwordCompliant\Musiclists\Models;
 
 use Model;
-use Str;
 
 class Artist extends Model
 {
+    use \October\Rain\Database\Traits\Sluggable;
     protected $table = 'ml_artists';
-
-    public function beforeCreate()
-    {
-        $this->slug = Str::slug($this->name);
-    }
-
+    protected $slugs = ['slug' => 'name'];
 }

@@ -6,6 +6,8 @@ fields:
     label: Publication
     type: relation
     nameFrom: name
-  albums:
+    emptyOption: 'No publication selected...'
+  items:
     label: Albums
     type: partial
+    context: update # This is currently broken for creation

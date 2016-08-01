@@ -1,6 +1,7 @@
 name: Artist
 form: $/buzzwordcompliant/musiclists/models/artist/fields.yaml
 modelClass: BuzzwordCompliant\Musiclists\Models\Artist
+defaultRedirect: buzzwordcompliant/musiclists/artists
 
 create:
     title: New artist
@@ -12,3 +13,4 @@ update:
     title: Edit album
     redirect: buzzwordcompliant/musiclists/artists
     redirectClose: buzzwordcompliant/musiclists/artists
+    redirectDelete: buzzwordcompliant/musiclists/artists

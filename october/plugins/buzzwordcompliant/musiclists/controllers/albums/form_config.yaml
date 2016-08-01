@@ -1,6 +1,7 @@
 name: Album
 form: $/buzzwordcompliant/musiclists/models/album/fields.yaml
 modelClass: BuzzwordCompliant\Musiclists\Models\Album
+defaultRedirect: buzzwordcompliant/musiclists/albums
 
 create:
     title: New album

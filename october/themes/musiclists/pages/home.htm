@@ -14,11 +14,9 @@ is_hidden = 0
             </p>
             <ul>
                 {% for albumList in albumLists %}
-                <li>
-                    <a href="/list/{{ albumList.publication.slug }}/{{ albumList.slug }}">
-                        {{ albumList.publication.name }} - {{ albumList.name }}
-                    </a>
-                </li>
+
+                {% partial "album-list-item" albumList=albumList %}
+
                 {% endfor %}
             </ul>
         </div>

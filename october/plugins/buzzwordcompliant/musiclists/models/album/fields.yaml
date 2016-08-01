@@ -4,3 +4,4 @@ fields:
   artist:
     label: Artist
     type: relation
+    emptyOption: 'Choose...'

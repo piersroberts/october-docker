@@ -1,21 +1,37 @@
-albums:
-    label: Album
-    view:
-        list:
-          columns:
-            pivot[position]:
-              label: Position
-            artist:
-              label: Artist
-              relation: artist
-              select: name
-            name: Name
+items:
+  label: Album
 
-        showSearch: true
-    manage:
-      list: ~/plugins/buzzwordcompliant/musiclists/models/album/columns.yaml
-    pivot:
-      form:
-        fields:
-          pivot[position]:
-            label: Position
+  view:
+    list:
+      columns:
+        pivot[position]:
+          label: Position
+        artist:
+          relation: artist
+          label: Artist
+          select: name
+          sortable: false
+        name:
+          label: Album title
+          sortable: false
+
+    toolbarButtons: add|remove
+
+  manage:
+      showSearch: true
+      list:
+        columns:
+          artist:
+            searchable: true
+            label: Artist
+            relation: artist
+            select: name
+          name:
+            label: Name
+            searchable: true
+
+  pivot:
+    form:
+      fields:
+        pivot[position]:
+          label: Position

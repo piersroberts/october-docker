@@ -1,10 +1,11 @@
 name: Album List
 form: $/buzzwordcompliant/musiclists/models/albumlist/fields.yaml
 modelClass: BuzzwordCompliant\Musiclists\Models\AlbumList
+defaultRedirect: buzzwordcompliant/musiclists/lists
 
 create:
     title: New album list
-    redirect: buzzwordcompliant/musiclists/lists
+    redirect: buzzwordcompliant/musiclists/lists/update/:id
     redirectClose: buzzwordcompliant/musiclists/lists
     flashSave: List created
 

@@ -8,8 +8,11 @@ class Lists extends \Backend\Classes\Controller
     public $implement = [
         'Backend.Behaviors.ListController',
         'Backend.Behaviors.FormController',
-        'Backend.Behaviors.RelationController'
+        'Backend.Behaviors.RelationController',
+        'Backend.Behaviors.ReorderController',
     ];
+
+    public $reorderConfig = 'reorder_config.yaml';
     public $listConfig = 'list_config.yaml';
     public $formConfig = 'form_config.yaml';
     public $relationConfig = 'relation_config.yaml';

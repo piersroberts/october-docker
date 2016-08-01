@@ -2,26 +2,16 @@
 namespace BuzzwordCompliant\Musiclists\Models;
 
 use Model;
-use Str;
 
 class Album extends Model
 {
+    use \October\Rain\Database\Traits\Sluggable;
+
     protected $table = 'ml_albums';
+    protected $slugs = ['slug' => 'name'];
 
     public $belongsTo = [
         'artist' => 'BuzzwordCompliant\Musiclists\Models\Artist'
     ];
 
-    public $belongsToMany = [
-        'album_lists' => [
-            'BuzzwordCompliant\Musiclists\Models\AlbumList',
-            'table' => 'ml_album_list_items',
-            'pivot' => ['position']
-        ]
-    ];
-
-    public function beforeCreate()
-    {
-        $this->slug = Str::slug($this->name);
-    }
 }

@@ -21,6 +21,7 @@ class InitialSetup extends Migration
             $table->engine = 'InnoDB';
             $table->increments('id');
             $table->string('name');
+            $table->date('release_date')->nullable();
             $table->string('slug')->index();
             $table->integer('artist_id')->unsigned();
             $table->foreign('artist_id')->references('id')->on('ml_artists');
