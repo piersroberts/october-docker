@@ -167,7 +167,6 @@
         this.$textarea.on('froalaEditor.keydown', this.proxy(this.onKeydown))
         this.$textarea.on('froalaEditor.html.get', this.proxy(this.onSyncContent))
         this.$textarea.on('froalaEditor.html.set', this.proxy(this.onSetContent))
-        this.$form.on('oc.beforeRequest', this.proxy(this.onFormBeforeRequest))
 
         this.$textarea.froalaEditor(froalaOptions)
 
@@ -200,7 +199,6 @@
         this.$textarea.off('froalaEditor.keydown', this.proxy(this.onKeydown))
         this.$textarea.off('froalaEditor.html.get', this.proxy(this.onSyncContent))
         this.$textarea.off('froalaEditor.html.set', this.proxy(this.onSetContent))
-        this.$form.off('oc.beforeRequest', this.proxy(this.onFormBeforeRequest))
 
         $(window).off('resize', this.proxy(this.updateLayout))
         $(window).off('oc.updateUi', this.proxy(this.updateLayout))
@@ -329,14 +327,6 @@
 
     RichEditor.prototype.onChange = function(ev) {
         this.$form.trigger('change')
-    }
-
-    RichEditor.prototype.onFormBeforeRequest = function(ev) {
-        // Instantly synchronizes HTML content. 
-        // The onSyncContent() method (above) is involved
-        // into this call, so the resulting HTML is (optionally)
-        // beautified
-        this.$textarea.val(this.$textarea.froalaEditor('html.get'))
     }
 
     // RICHEDITOR PLUGIN DEFINITION
