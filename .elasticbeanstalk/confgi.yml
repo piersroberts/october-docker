@@ -1,0 +1,8 @@
+files:
+  "/opt/elasticbeanstalk/hooks/appdeploy/post/ml_post_deploy.sh":
+    mode: "000755"
+    owner: root
+    group: root
+    content: |
+      cd $EB_APP_CURRENT_DIR
+      cd october && php artisan october:mirror www/ 
