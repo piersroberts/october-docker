@@ -1,8 +1,0 @@
-title: Publications
-list: ~/plugins/buzzwordcompliant/musiclists/models/publication/columns.yaml
-modelClass: BuzzwordCompliant\Musiclists\Models\Publication
-recordUrl: buzzwordcompliant/musiclists/publications/update/:id
-toolbar:
-    buttons: list_toolbar
-    search:
-        prompt: Find publication

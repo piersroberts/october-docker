@@ -1,6 +1,0 @@
-columns:
-    publication:
-      label: Publication
-      relation: publication
-      select: name
-    name: Name

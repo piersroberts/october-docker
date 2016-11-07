@@ -1,7 +1,0 @@
-#! /bin/sh
-SCRIPTS_PATH=`pwd`"/"`dirname $0`
-PROJECT_PATH=$SCRIPTS_PATH"/.."
-OCTOBER_PATH=$PROJECT_PATH"/october"
-
-cd $OCTOBER_PATH
-$SCRIPTS_PATH/build.sh

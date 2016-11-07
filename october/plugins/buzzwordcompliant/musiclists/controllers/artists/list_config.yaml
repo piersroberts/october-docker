@@ -1,8 +1,0 @@
-title: Artists
-list: ~/plugins/buzzwordcompliant/musiclists/models/artist/columns.yaml
-modelClass: BuzzwordCompliant\Musiclists\Models\Artist
-recordUrl: buzzwordcompliant/musiclists/artists/update/:id
-toolbar:
-    buttons: list_toolbar
-    search:
-        prompt: Find artist

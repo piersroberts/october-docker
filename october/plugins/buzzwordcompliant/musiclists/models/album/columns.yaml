@@ -1,6 +1,0 @@
-columns:
-    artist:
-      label: Artist
-      relation: artist
-      select: name
-    name: Name

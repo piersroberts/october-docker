@@ -1,8 +1,0 @@
-title: Albums
-list: ~/plugins/buzzwordcompliant/musiclists/models/album/columns.yaml
-modelClass: BuzzwordCompliant\Musiclists\Models\Album
-recordUrl: buzzwordcompliant/musiclists/albums/update/:id
-toolbar:
-    buttons: list_toolbar
-    search:
-        prompt: Find album
