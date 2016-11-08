@@ -18,12 +18,18 @@ services:
             - .:/sites/musiclists
         links:
             - mysql
+        environment:
+            DB_CONNECTION: mysql
+            DB_HOST: musiclists_mysql_1
+            DB_DATABASE: ${DB_DATABASE}
+            DB_USERNAME: ${DB_USERNAME}
+            DB_PASSWORD: ${DB_PASSWORD}
     mysql:
-      image: "mysql:5.6"
-      ports: 
-        - 3306
-      environment:
-        MYSQL_ROOT_PASSWORD: root
-        MYSQL_DATABASE: musiclists
-        MYSQL_USER: musiclists
-        MYSQL_PASSWORD: musiclists
+        image: "mysql:5.6"
+        ports: 
+            - 3306
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: ${DB_DATABASE}
+            MYSQL_USER: ${DB_USERNAME}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
